@@ -1,13 +1,45 @@
+/* ##############################################
+        IMPORTACIONES
+  ############################################### */
+
+/* 
+MODULOS
+*/
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+/* 
+ESTILOS
+*/
 import './index.css';
-import App from './App';
+/* 
+COMPONENTES 
+*/
+import NavBar from './components/navbar/NavBar.js'
+// import App from './App';
+import ItemListContainer from './components/itemListContainer/ItemListContainer.js'
+import Footer from './components/footer/Footer';
+/* 
+Core
+*/
 import reportWebVitals from './reportWebVitals';
+
+/* ##############################################
+        Logica
+  ############################################### */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <NavBar
+    
+    >
+    </NavBar>
+    
+    <ItemListContainer greeting='Hola mundo'>
+
+    </ItemListContainer>
+    <Footer/>
+
   </React.StrictMode>
 );
 
