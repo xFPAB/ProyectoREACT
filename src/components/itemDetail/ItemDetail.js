@@ -5,27 +5,29 @@ Importaciones
 //Modulos
 //Estilos
 import './ItemDetail.css'
-import ItemCount from '../itemCount/ItemCount'
 //Componentes
+import ItemCount from '../itemCount/ItemCount'
+
 //Core
 
 /* 
 Logica
 */
-const ItemDetail = (props) => {  //Funcion constructora
+const ItemDetail = ({titulo,categoria,descripcion,precio,stock,img}) => {  //Funcion constructora
 
-    const {nombre,categoria,precio,descripcion,stock} = props.data
 
-    return(
-        <div>
-           <p> {categoria} </p>
-           <p> {nombre} </p>
-           <p> {descripcion} </p>
-           <p> {precio} </p>
-           <ItemCount stock = {stock}> </ItemCount>
-        </div>
 
-    )
+        return(
+            <article>
+            <p> {categoria} </p>
+            <p> {titulo} </p>
+            <p> {descripcion} </p>
+            <p> {precio} </p>
+            <ItemCount stock = {stock}> </ItemCount>
+            <img src={img} height='100px' width='100px'></img>
+            </article>
+            )
+
 
 }
 
