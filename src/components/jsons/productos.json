@@ -1,0 +1,34 @@
+[
+{
+        "id":1,
+        "nombre":"Olla Hudson",
+        "descripcion":"De las mejores ollas del mercado",
+        "precio":16000,
+        "categoria":"Ollas",
+        "stock":3
+    },
+    {
+        "id":2,
+        "nombre":"Tostadora Hilux",
+        "descripcion":"La mejor tostadora del mercado",
+        "precio":7900,
+        "categoria":"Tostadoras",
+        "stock":10
+    },
+    {
+        "id":3,
+        "nombre":"Licuadora JX23",
+        "descripcion":"La mejor licuadora del mercado",
+        "precio":10000,
+        "categoria":"Licuadoras",
+        "stock":5
+    },
+    {
+        "id":4,
+        "nombre":"Plancha gamma italian gold",
+        "descripcion":"La mejor plancha del mercado",
+        "precio":19000,
+        "categoria":"Planchas",
+        "stock":9
+    }
+]

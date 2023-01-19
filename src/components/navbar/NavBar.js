@@ -3,6 +3,7 @@ Importaciones
 */
 
 //Modulos
+import { Link } from 'react-router-dom'
 //Estilos
 import './NavBar.css'
 import CardWidget from '../cardWidget/CardWidget.js'
@@ -17,10 +18,10 @@ const NavBar = () => {  //Funcion constructora
     return(
         <header className='navbar'>
             
-            <a className ='item' href=''>Home</a>
-            <a className ='item' href=''>Productos</a>
-            <a className ='item' href=''>Categorias</a>
-            <a className ='item' href=''>Contactanos</a>
+            <Link to="/" className ='item'>Home</Link>
+            <Link to="/productos" className ='item'>Productos</Link>
+            <Link to="/" className ='item'>Categorias</Link>
+            <Link to="/contactanos" className ='item'>Contactanos</Link>
             <CardWidget cantidad ="10"/>
             
         </header>

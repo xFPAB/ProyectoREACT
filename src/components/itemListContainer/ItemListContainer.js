@@ -3,22 +3,48 @@ Importaciones
 */
 
 //Modulos
+import { useState } from 'react'
 //Estilos
 import './ItemListContainer.css'
+/* import Hooks from '../hooks/Hooks.js' */
+
 //Componentes
+import ItemList from '../itemList/ItemList'
 //Core
 
 /* 
 Logica
 */
-const ItemListContainer = (props) => {  //Funcion constructora
+const ItemListContainer = () => {  //Funcion constructora
+    const [categoria,setCategoria] = useState ("all")
+
+    const categoriaTostadoras = () => {
+        setCategoria("Tostadoras")
+    }
+    const categoriaOllas = () => {
+        setCategoria("Ollas")
+    }
+    const categoriaLicuadoras = () => {
+        setCategoria("Licuadoras")
+    }
+    const categoriaPlanchas = () => {
+        setCategoria("Planchas")
+    }
+    const categoriaAll = () => {
+        setCategoria("All")
+    }
+
 
     return(
+
         <div>
-            <h1> Bienvenidos a LuzBianca Bazar! </h1>
-            <p>
-            Este es el componente contenedor ItemListContainer {props.greeting}
-            </p>
+            <p>Item list container</p>
+            <button onClick={categoriaTostadoras}>Tostadoras</button>
+            <button onClick={categoriaOllas}>Ollas</button>
+            <button onClick={categoriaLicuadoras}>Licuadoras</button>
+            <button onClick={categoriaPlanchas}>Planchas</button>
+            <button onClick={categoriaAll}>All</button>
+            <ItemList categoriaName={categoria}></ItemList>
         </div>
     )
 
